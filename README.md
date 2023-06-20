@@ -1,7 +1,7 @@
 # Batch-105-SQL
 
 1. Clone the branch locally
-2. Create a file **yourName-session-01-assignment.sql** with all your assigments
+2. Create a file **yourName-session-0[1/2/3/4]-assignment.sql** with all your assigments
 3. Add and commit the file
 4. push the code to remote repo
 
