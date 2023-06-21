@@ -1,4 +1,12 @@
 -- use facebook
+-- DDL COMMAND 
+-- 1 create 2 drop  3 truncate 4 alter 5 rename
+-- DML COMMAND
+-- 1 INSERT 2 UPDATE 3 DELETE
+-- DQL COMMAND
+-- 1 SELECT
+-- TCL COMMAND
+-- 1 COMMIT 2 ROLLBACK 3 SAVEPOINT
 -- USING CREATE(DDL)
 create table mysqlCommend(
 name varchar(100) not null,
