@@ -54,8 +54,3 @@ ALTER TABLE Student1
 RENAME COLUMN std_name to Student_name;
 
 select * from Student1;
-
-
-
-
-
