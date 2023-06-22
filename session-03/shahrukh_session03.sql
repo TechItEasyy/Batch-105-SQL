@@ -1,78 +1,81 @@
- -- use facebook;
+-- create database shahrukh1
+-- use shahrukh1;
 create table department(
 dept_id int not null,
-dept_name varchar(100) ,
+dept_name varchar(200),
 primary key(dept_id)
 );
-insert into department(dept_id,dept_name)values
-(101,'bca'),
-(102,'mca'),
-(103,'bba'),
-(104,'bit'),
-(105,'bcom'),
-(106,'bsc'),
-(107,'cs');
-select * from department;
 
 create table student(
-student_id int not null unique,
-student_name varchar(100) not null,
+stId int not null,
+dept_id int not null,
+stName varchar(200),
 marks double,
-
-foreign key(student_id) references department(dept_id)on delete cascade
+primary key(stId),
+foreign key(dept_id) references department(dept_id) on delete cascade
 );
- 
- insert into student(student_id,student_name,marks)values
- (101,'saira',99.5),
- (102,'sona',75.6),
- (103,'naier',55.3),
- (104,'shahrukh',65.2),
- (105,'hasnain',45.7),
- (106,'Abid',30.4),
- (107,'saif',85.5);
- 
- create table Books(
- book_id int not null unique,
- author_name varchar(50)
- );
- 
- insert into Books(book_id,author_name)values
- (19,'Abid'),
- (23,'shahrukh');
- 
- select * from student where marks>75;
- 
- select * from student where marks<35;
- 
- select * from student where student_name like '%s';
- select * from student where student_name like "%s";
-  select * from student where student_name like 's%';
-  
-   select * from student where student_name like "ab%";
-   
-   select * from student order by marks asc;
-   
-   select * from student order by marks desc;
-   
-   select * from student where marks in(55.3,65.2,85.5);
-   
-   select * from student where marks between 45.7 and 65.2;
-   
-   
-   create table Autotest(
-   testid int not null auto_increment,
-   primary key(testid)
-   );
-   
-   insert into Autotest values(100);
-   insert into Autotest values();
-   
-   
-   -- delete from department where dept_id=103;
-   -- delete parents table record using ON DELETE CASCADE in child table
-   
-   
-   delete from department where dept_id=103;
-   
-   
- 
+
+
+
+
+
+insert into department values(001,'mca');
+insert into department values(002,'bca');
+insert into department values(004,'b-tech');
+
+insert into student values(1001,001,'Abid',98);
+insert into student values(1002,002,'shahrukh',75);
+insert into student values(1003,001,'saaz',65);
+insert into student values(1004,004,'naier',60);
+insert into student values(1006,002,'isma',55);
+insert into student values(1007,004,'shan',50);
+insert into student values(1008,001,'raaz',45);
+insert into student values(1005,002,'sona',35);
+insert into student values(1009,002,'dear',30);
+
+select * from student;
+-- desc student;
+
+create table book(
+bId int not null unique,
+bAuthor varchar(200) unique
+);
+ insert into book values(110,'abid');
+ insert into book values(115,'shahrukh');
+
+
+select * from student where marks>75;
+
+
+select * from student where marks<35;
+
+select * from student where stName like's%';
+
+select * from student where stName like 'aa%';
+
+select marks from student order by marks asc;
+
+select marks from student order by marks desc;
+
+ select * from student where marks in(55,65,45);
+
+select * from student where marks between 55 and 98;
+
+create table Autotest(
+name varchar(200),
+roll int not null auto_increment,
+primary key(roll)
+);
+alter table Autotest auto_increment=100;
+
+insert into Autotest(name) values('abid');
+insert into Autotest(name) values('abid');
+insert into Autotest(name) values('abid');
+insert into Autotest(name) values('abid');
+
+select * from Autotest;
+
+
+delete  from department;
+
+select * from deparment;
