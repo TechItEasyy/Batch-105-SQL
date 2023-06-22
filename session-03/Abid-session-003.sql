@@ -69,7 +69,7 @@ foreign key(student_id) references department(dept_id)on delete cascade
    
    -- delete from department where dept_id=103;
    -- delete parents table record using ON DELETE CASCADE in child table
-   
+   delete from department where dept_id=103;
    
    delete from department where dept_id=103;
    
