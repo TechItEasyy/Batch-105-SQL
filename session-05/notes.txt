@@ -1,0 +1,2 @@
+Create a document with question and answer of each question mentioned in the SQL_Exercises.pdf
+Add screenshots to the document if required.
