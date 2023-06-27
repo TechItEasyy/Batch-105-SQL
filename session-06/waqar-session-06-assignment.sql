@@ -72,7 +72,7 @@ Select * from StudentN
 --6. Create a subquery to fetch the details(stName, marks) of the stidents who belong to Bihar.
 
 
-Select 
-Select dept_id, student_name 
-from StudentN
+Select * from (
+Select dept_id, student_name from StudentN s where marks > 75 )
+as tt 
 
