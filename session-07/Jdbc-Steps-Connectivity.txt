@@ -1,0 +1,16 @@
+static final String DB_URL = "jdbc:mysql://localhost:3306/DataBase";
+static final String USER = "userName";
+static final String PASS = "Password";
+
+Connecting DB using JDBC (My-SQL) ODBC (Oracle) 
+
+1. Adding Driver Jars to the application
+
+2. Registering the Jars to the application
+
+3. Create connection
+   url, use, pwd
+   
+4. CRUD: Create, Retrieve, Update, Delete
+
+5. Closing the connection
