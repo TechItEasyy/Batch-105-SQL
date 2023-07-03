@@ -1,0 +1,4 @@
+1. Create a table Employee (empId,EmpName,Salary)
+2. Read a list of Employees having 10 employee details
+3. Insert employees details into Employee table using jdbc PreparedStatement
+4. Print all the data
