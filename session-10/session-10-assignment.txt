@@ -1,0 +1,4 @@
+1. Create a table Student (studentId,StudentName,marks)
+2. Read a file of Student having 10 stdents details
+3. Insert Student's details into Student table using jdbc PreparedStatement
+4. Read Student details from Table and write into a file
