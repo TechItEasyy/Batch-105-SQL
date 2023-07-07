@@ -3,21 +3,3 @@
     accountNumber - int
     accountBalance - double
 2. Do CRUD (Create, Retrieve, Update, Delete) operation using JDBC
-PreparedStatement pstmt=con.prepareStatement(sql);
-		pstmt.setString(1, "Abid");
-		pstmt.setInt(2, 49784548);
-		pstmt.setDouble(3, 50000);
-		pstmt.executeUpdate();
-		pstmt.setString(1, "shahrukh");
-		pstmt.setInt(2, 54548);
-		pstmt.setDouble(3, 240000);
-		pstmt.executeUpdate();
-		st.execute("update account set acNo=12345 where acname='shahrukh'");
-		System.out.println("inserted data");
-		
-		ResultSet rs=pstmt.executeQuery("select * from account");
-		while(rs.next())
-		{
-			System.out.println(rs.getString(1)+" "+ rs.getInt(2)+" "+rs.getDouble(3));
-
-		}
